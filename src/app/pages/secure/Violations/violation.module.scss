@@ -1,0 +1,437 @@
+@import '../../../../assets/styles/utils/_variable';
+@import '../../../../assets/styles/utils/_function';
+
+.subTitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calculateRem(22px);
+  line-height: 140%;
+  color: #1E1E1E;
+}
+
+.subHeader {
+  @extend .subTitle;
+  font-size: calculateRem(18px);
+  color: #4F4F4F;
+  padding: 20px 0;
+}
+
+.label {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calculateRem(16px);
+  line-height: calculateRem(20px);
+  color: #828282;
+}
+
+.table {
+  tr {
+    &:first-child {
+      background: #828282;
+      border: 0.5px solid #828282;
+    }
+  }
+
+  th {
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: calculateRem(16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: calculateRem(22px);
+    letter-spacing: 0em;
+    color: #FFFFFF
+  }
+  
+  td {
+    padding: 2px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #232326;
+    border: 0.5px solid #828282;
+    border-radius: 1px;
+
+    &:first-child {
+      width: calculateRem(120px);
+      font-size: calculateRem(15px);
+      line-height: calculateRem(20px);
+    }
+
+    &:last-child {
+      text-align: left;
+      width: calculateRem(300px);
+      font-size: calculateRem(11px);
+      line-height: calculateRem(18px);
+    }
+  }
+}
+
+.pageNumbers {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #1e1e1e;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+.activeGreen {
+  background-color: #0fb377;
+  color: #beea9c;
+  margin-left: 0;
+}
+.pageDisabled {
+  display: none;
+}
+
+.moveRight {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+@mixin iconBtn {
+  position: absolute;
+  bottom: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.iconCancel {
+  @include iconBtn;
+  background-color: #fb4179;
+  left: -8px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+
+    > * {
+      stroke: #fff;
+    }
+  }
+}
+
+.iconTick {
+  @include iconBtn;
+  right: -8px;
+  background-color: #0fb377;
+}
+
+.txtArea {
+  border-color: #e0e0e0;
+  border-radius: 4px;
+  resize: none;
+  font-size: 12px;
+}
+
+.pPoppins {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif ;
+  font-size: 14px ;
+  font-style: normal ;
+  font-weight: 700 ;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.pepSelectCustomIconStyle{
+  padding-left: 6px;
+}
+
+.pepSelectCloseIconStyle{
+  background-color: #0FB377 !important;
+}
+
+.pepDataTableStyle{
+  width: 100%;
+  padding-top: 16px;
+}
+
+.pepTableProfileHeaderStyle{
+  width: 68px;
+}
+
+.pepTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.pepTableNameHeaderStyle{
+ text-align: center !important;
+}
+
+.pepTableNameColumnStyle{
+  font-weight: 700;
+  text-align: center;
+ }
+
+ .pepTableContactColumnStyle{
+   text-align: center;
+ }
+
+ .pepTableContactValueStyle{
+  font-size: 12px;
+}
+
+.pepTableRisktypeSelectStyle{
+  border: none;
+  font-size: 1rem;
+  width: 115px;
+}
+
+.pepTableUseAppSelectStyle{
+  border: none;
+  font-size: 1rem;
+}
+
+.pepTableSaveHeaderStyle{
+  border: none !important;
+  width: 100px;
+}
+
+.pepTableSaveColumnStyle{
+  border: none !important;
+}
+
+.pepDialogStyle{
+  width: 50vw;
+}
+
+.pepTableTextAreaStyle{
+  position: relative;
+}
+
+.creditRemarkTableColumnStyle{
+    text-align: center;
+}
+
+.creditRemarkTableHeaderStyle{
+    text-align: center !important;
+    width: 182px;
+    height: 62px;
+}
+
+.actionTemplateColumnStyle{
+    text-align: center;
+  }
+  
+.actionTemplateHeaderStyle{
+    width: 150px;
+    text-align: center;
+}
+
+.reportReviewDataTableStyle{
+    width: 100%;
+}
+
+.reporteeAndReporter {
+    display: flex;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .reporteeAndReporterRowContainer{
+    width: 95%;
+  }
+
+  .reporteeAndReporterIconContainer{
+    width: 5%;
+  }
+
+  .allReportUserAlign{
+    align-items: center;
+  }
+  
+  .allReportNameHeaderStyle{
+    text-align: center;
+    padding-left: 20px;
+  }
+  
+  .allReportRowStyle{
+    font-weight: bolder;
+  }
+  
+  .allReportRowArrowIconStyle{
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .allReportTableContentStyle{
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .allReportTableHeaderStyle{
+    display: none;
+  }
+  
+  .allReportTableRowStyle{
+    height: 60px;
+    // background-color: red !important ;
+  }
+
+  .allAccountProfileImgStyle{
+    width: 48px;
+    height: 48px; 
+    border-radius: 24px;
+  }
+
+  .reportUserWrapper {
+    display: flex;
+    justify-self: start;
+    width: 90vw !important;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .colProfile {
+    width: 145px;
+    margin-right: 5px;
+  }
+  .colContacts {
+    width: 250px;
+    margin-right: 5px;
+  }
+  .colAmmount {
+    width: 150px;
+    margin-right: 5px;
+  }
+  .dob {
+    width: 120px;
+    margin-right: 5px;
+  }
+  .trustScore {
+    width: 60px;
+    margin-right: 5px;
+  }
+  .loan {
+    width: 160px;
+    margin-right: 5px;
+  }
+  .defaulted {
+    width: 120px;
+    margin-right: 5px;
+  }
+  .action {
+    width: 0;
+    // margin:10px auto;
+  }
+  .tableHeader {
+    background-color: #828282;
+  }
+  
+  .headerTextColor {
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .pInter {
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  .inv {
+    background-color: #e7fed5;
+  }
+  
+  .bor {
+    background-color: #ecdafe;
+    width: inherit;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+  .BlockValueStyle{
+    text-align: center;
+    text-decoration: underline;
+   }
+   
+   .analyticsDiaStyle{
+    width: 50vw;
+  }
+  
+  .analyticsDiaTableStyle{
+    width: 100%;
+    border-bottom: none !important;
+    cursor: pointer;
+    height: 500px;
+  }
+
+ .blockModalProfile{
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+ }
+
+ .blockModalProfileHeader{
+  width: 40px;
+ }
+
+ .DialoguserColumnStyle{
+   margin-top: 12px;
+   color: black;
+ }
+
+ .reasonTextAreaStyle{
+    height: 50px;
+    overflow: auto;
+    text-align: left;
+ }
+
+ .reviewTextTitleStyle{
+   text-align: left;
+   font-weight: 700;
+   font-size: 14px;
+   color: black;
+ }
+
+ .reviewTextBodyStyle{
+  text-align: left;
+  font-size: 14px;
+  color: black;
+}
+
+.TabNameStyle{
+  padding-right: 50px;
+}
+
+.LineStyle{
+  margin-bottom: 0 !important;
+}

@@ -1,0 +1,55 @@
+$dialog-p: calculateRem(30px);
+.len-dialog {
+  &.p-dialog {
+    .p-dialog-titlebar {
+      padding: $dialog-p $dialog-p calculateRem(26px);
+      background-color: white;
+      border: none;
+    }
+    .p-dialog-content {
+      padding-left: $dialog-p;
+      padding-right: $dialog-p;
+      border: none;
+    }
+    .p-dialog-footer {
+      padding: 0 $dialog-p $dialog-p;
+      background-color: white;
+      border: none;
+    }
+    &.confirm-dialog,
+    &.info-dialog {
+      .p-dialog-titlebar {
+        padding: $dialog-p $dialog-p calculateRem(16px);
+      }
+    }
+
+    &.error-dialog {
+      .p-dialog-titlebar {
+        padding: $dialog-p $dialog-p calculateRem(16px);
+        text-align: center;
+      }
+
+      .p-dialog-content {
+        padding-left: $dialog-p;
+        padding-right: $dialog-p;
+        border: none;
+        text-align: center; 
+      }
+
+      .p-dialog-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &.review-dialog {
+      .p-dialog-titlebar{
+        display: none;
+      }
+      .p-dialog-content {
+        border-radius: calculateRem(24px);
+      }
+    }
+  }
+}

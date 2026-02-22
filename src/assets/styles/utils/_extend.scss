@@ -1,0 +1,13 @@
+
+%h-fit{
+    height: 100%;
+}
+
+%html-body-prop{
+    @extend %h-fit;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    font-family: $poppins-family;
+}
+

@@ -1,0 +1,108 @@
+@import "../../../../assets/styles/style.scss";
+
+.textGreen {
+  color: #0fb377;
+}
+.textRed {
+  color: #fb4179;
+}
+
+.lightGreenBanner {
+  background: #e7fed5;
+  width: 90vw;
+}
+.currencyText {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.subTabHeading {
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.bottomText {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.analyticsHeadText {
+  font-family: Poppins, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.rowData{
+  display: flex; 
+}
+.col{
+  margin-right: 2px;
+}
+.analyticsWrapper{
+  max-width:150%;
+  overflow: auto;
+}
+
+.demographicBAgeStyle{
+  margin-top: 20px;
+}
+
+.demographicLoanPurposeText{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.transactionInfoIconStyle{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.setImagePercentageStyle{
+  text-align: center;
+}
+
+.setImageImgContainer{
+  background-color: #F2F2F2;
+  margin: 0 20px 20px 0;
+  border-radius: 10px;
+}
+
+.setImageImgStyle{
+   width: 150px;
+   height: 150px;
+}
+
+.analyticsDiaStyle{
+  width: 50vw;
+}
+
+.analyticsDiaTableStyle{
+  width: 100%;
+  cursor: pointer;
+}

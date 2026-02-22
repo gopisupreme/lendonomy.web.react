@@ -1,0 +1,216 @@
+.pageNumbers {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #1e1e1e;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .activeGreen {
+    background-color: #0fb377;
+    color: #beea9c;
+    margin-left: 0;
+  }
+  .pageDisabled {
+    display: none;
+  }
+  
+  .moveRight {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .unchecked {
+    path:first-child {
+      fill: #bdbdbd;
+    }
+  }
+  
+  .pPoppins {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .pInter {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+  }
+  
+
+.todayNotifyDataTableStyle{
+    padding-top: 30px;
+    width: 100%;
+  }
+  
+  .todayNotifyTitleHeaderStyle{
+    width: 130px;
+    text-align: center !important;
+  }
+  
+  .allPromoDiscountStyle{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .allPromoUsedTimesStyle{
+    width: 130px;
+    text-align: center !important;
+  }
+
+  .todayAvailableColumnStyle{
+    text-align: center;
+   }
+
+   .todayAvailableHeaderStyle{
+    width: 120px;
+    text-align: center !important;
+   }
+
+   .todayNotesColumnStyle{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
+
+   .retriggerColumnStyle{
+    text-align: center;
+  }
+  
+  .retriggerHeaderStyle{
+    width: 110px;
+    text-align: center;
+  }
+
+.addButtonStyle{
+    position: absolute;
+    right: 50px;
+}
+
+.manageEditButtonStyle{
+    width: 80px;
+}
+  
+  .genPromoReviewDialogStyle{
+    width: 60%;
+  }
+  
+  .genPromoReviewDialogContainer{
+    padding: 30px;
+  }
+  
+  .genPromoReviewDialogHeaderStyle{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    color: #000000;
+  }
+  
+  .genPromoReviewValidContainer{
+    padding: 16px 0;
+  }
+  
+  .genPromoReviewValidFromStyle{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+  }
+  
+  .genPromoReviewValidFromValueStyle{
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .DialogPhoneColStyle{
+    font-weight: 700;
+    color: #4F4F4F;
+    text-transform: uppercase;
+  }
+
+  .userEditPhoneNumStyle{ 
+    margin-top: -12px;
+  }
+
+  .OtpDialogContainer{
+    width: 40%;
+  }
+
+ .otpHeaderStyle{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 140%;
+    color: #000000;
+  }
+
+  .otpSubHeaderStyle{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #1E1E1E;
+  }
+
+  .otpContentContainer{
+    padding: 10px;
+  }
+
+  .userNotesHeaderStyle{
+    width: 150px;
+    text-align: center !important;
+   }
+
+
+  .userNotesStyle{ 
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
+  
+  .userTableNameStyle{
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .userEditCalStyle{
+    position: relative;
+  }
+
+  .userEditCalIconContainer{
+    position: absolute;
+    top:2px;
+    right: 2px;
+  }
+
+  .userEditCalIconStyle{
+   width: 30px;
+   height: 30px;
+  }
+
+  .userCountCodeStyle{ 
+    padding: 0 0 0 10px;
+  }

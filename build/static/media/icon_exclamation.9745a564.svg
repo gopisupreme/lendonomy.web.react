@@ -1,0 +1,30 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- <rect width="20" height="20" fill="#E5E5E5"/> -->
+<g id="profile_list" clip-path="url(#clip0)">
+<!-- <rect width="1680" height="1939" transform="translate(-31 -388)" fill="white"/> -->
+<g id="Group 477">
+<!-- <rect id="Rectangle" x="-31" y="-388" width="268" height="1048" fill="white"/> -->
+<g id="Group 476">
+<g id="Group 460">
+<g id="Group 402">
+<!-- <rect id="Rectangle_2" x="-30" y="-14" width="268" height="48" fill="white"/> -->
+<g id="Navigation">
+<circle id="Ellipse 14" cx="10" cy="10" r="20" fill="transparent"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g id="Group 457">
+<g id="icon_discover">
+<circle id="Ellipse 9" cx="10" cy="10" r="9" stroke-width="2"/>
+</g>
+<path id="!" d="M11.018 4.822L10.738 11.528H8.708L8.428 4.822H11.018ZM9.758 15.112C9.338 15.112 8.99267 14.9907 8.722 14.748C8.46067 14.496 8.33 14.188 8.33 13.824C8.33 13.4507 8.46067 13.138 8.722 12.886C8.99267 12.634 9.338 12.508 9.758 12.508C10.1687 12.508 10.5047 12.634 10.766 12.886C11.0367 13.138 11.172 13.4507 11.172 13.824C11.172 14.188 11.0367 14.496 10.766 14.748C10.5047 14.9907 10.1687 15.112 9.758 15.112Z"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1680" height="1939" transform="translate(-31 -388)"/>
+</clipPath>
+</defs>
+</svg>

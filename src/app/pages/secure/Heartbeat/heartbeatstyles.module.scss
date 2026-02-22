@@ -1,0 +1,159 @@
+.heartBeatHeaderContainer{
+  position: relative;
+  border-bottom:1px solid #E0E0E0 ;
+}
+
+.buttonContainer{
+  position: absolute;
+  top:91px;
+  right: 35px;
+}
+
+.lightGreenBanner {
+  background: #e7fed5;
+  width: 90vw;
+}
+
+.subTabHeading {
+  font-family: Poppins, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.textGreen {
+  color: #0fb377;
+}
+.textRed {
+  color: #fb4179;
+}
+
+.heartBeatHeadText {
+  font-family: Poppins, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.bottomText {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+// .serviceTemplateStyle{
+//   width: 180px;
+// }
+
+.serviceTemplateTruncatedStyle{
+  color: #1E1E1E; 
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.serviceTemplateNormalStyle{
+  color: #1E1E1E; 
+  text-align: left;
+}
+
+.buttonPx{
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.tableServiceColumnStyle{
+  font-weight: 700;
+  color : #1E1E1E;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tableStatusColumnStyle{
+  font-weight: 700;
+  color : #1E1E1E;
+  text-align: center;
+}
+
+.table_parent_container{
+  justify-content: space-evenly;
+}
+
+.ServiceHeaderStyle{
+  width: 360px;
+  text-align: left !important;
+}
+
+.statusHeaderStyle{
+  width: 100px;
+}
+
+.heartbeatMainIndicatorImgStyle{
+  width: 35%;
+  height: 35%;
+}
+
+.heartbeatSubIndicatorImgStyle{
+  width: 240px;
+  height: 200px;
+}
+
+.heartbeatMainIndicatorTextStyle{
+  font-size: 66px;
+  margin-top: -20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.heartbeatSubIndicatorTextStyle{
+  cursor: pointer;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.heartbeatInterContainer{
+  padding: 14px 0 14px 30px;
+  align-items: center
+}
+
+.heartbeatInterHeaderStyle{
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "poppins";
+}
+
+.heartbeatInterLeftIconStyle{
+  &:before{
+  font-size: 2rem;
+  color: #64648C;
+  }
+}
+
+.heartbeatTableContainer{
+  padding: 0 0 0 70px;
+}
+
+.heartbeatPartnerBottomTextStyle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #828282
+}
+
+.heartbeatpartnerBottomContainer{
+  padding: 20px 70px 5px 70px;
+}

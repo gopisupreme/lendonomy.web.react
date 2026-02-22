@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  @extend %html-body-prop;
+  font-size: $base-font-size;
+}
+
+body {
+  @extend %html-body-prop;
+  @include relative();
+  overflow-x: hidden;
+}
+
+#root {
+  height: inherit;
+}
+
+.bubble::before {
+  content: ' \25CF';
+  font-size: 20px;
+  color: #FB4179;
+}

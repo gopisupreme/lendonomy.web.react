@@ -1,0 +1,18 @@
+
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+$input-padding-x: 12px;
+$input-height-lg: 48px;
+
+$theme-colors: (
+  "primary": $primary-color,
+  "danger": $danger-color,
+  "secondary": $secondary-color,
+  "light":$color-5,
+  "dark":$color-2
+);
+$theme-colors: map-remove($theme-colors, "warning", "success");
+
+@import "~bootstrap/scss/bootstrap";

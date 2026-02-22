@@ -1,0 +1,302 @@
+//auth wrapper config
+$auth-otp-help-fs:18px;
+$app--auth-wrapper: (
+    logo:(
+        prop:(
+            pt:23px,
+            pl:20px
+        )
+    ),
+    container:(
+        prop:(
+            width:335px
+        )
+    )
+);
+.auth-wrapper{
+    height: inherit;
+    .auth-logo{
+        width: calculateRem($base-logo-width);
+        padding-top: calculateRem(app-map-get($app--auth-wrapper, logo, prop, pt));
+        padding-left: calculateRem(app-map-get($app--auth-wrapper, logo, prop, pl));
+    }
+    .auth-container {
+        @include absolute($left:50%,$top:40%);
+        transform: translate(-50%,-50%);
+        width: calculateRem(app-map-get($app--auth-wrapper, container, prop, width));
+
+        .otp-help{
+            font-family: $inter-family;
+            font-size: calculateRem($auth-otp-help-fs);
+            color: $color-1;
+        }
+    }
+}
+//sidebar and admin config
+$sidebar-width: 242px;
+$sidebar-logo-width: 180px;
+$app--sidebar: (
+    logo:(
+        prop:(
+            w:calculateRem(220px),
+            py:calculateRem(23px),
+            px:calculateRem(20px)
+        )
+    ),
+    menu-list:(
+        prop:(
+            px:calculateRem(20px),
+            py:calculateRem(4px),
+        )
+
+    ),
+    menu-text:(
+        map-prop:(
+            font-family: $poppins-family,
+            font-size: calculateRem(16px),
+            color: $color-2,
+            padding-left: calculateRem(10px)
+        )
+    )
+);
+.admin-wrapper{
+    height: inherit;
+    .sidebar-section{
+        @include fixed($top:0, $left:0);
+        width: calculateRem($sidebar-width);
+        height: 100%;
+        border-right: 3px solid $color-4;
+        display: flex;
+        flex-direction: column;
+        .sidebar-logo{
+            width: app-map-get($app--sidebar, logo, prop, w);
+            padding: app-map-get($app--sidebar, logo, prop, py) app-map-get($app--sidebar, logo, prop, px);
+
+
+        }
+        .menu-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            .sidebar-menus{
+                margin-bottom: 0;
+                li{
+                    padding: app-map-get($app--sidebar, menu-list, prop, py) app-map-get($app--sidebar, menu-list, prop, px);
+                    list-style: none;
+                    margin-bottom:calculateRem(8px);
+                    cursor: pointer;
+                    .menu-item{
+                        display: flex;
+                        align-items: center;
+                        .menu-icon{
+                            @include map-to-props($app--avatar);
+                            background-color: $color-5;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all .3s ease-in;
+                            &.fill-icon{
+                                svg {
+                                    > * {
+                                        transition: all .3s ease-in;
+                                        fill: $color-2;
+                                    }
+                                }
+                            }
+                            &:not(.fill-icon){
+                                svg {
+                                    > * {
+                                        transition: all .3s ease-in;
+                                        stroke: $color-2;
+                                    }
+                                }
+                            }
+
+                        }
+                        .menu-text{
+                            @include map-to-props(app-map-get($app--sidebar, menu-text, map-prop));
+                            transition: all .3s ease-in;
+
+                        }
+                    }
+                    &:hover,
+                    .menu-active{
+                        .menu-icon{
+                            background-color: $primary-color;
+                            &.fill-icon{
+                                svg {
+                                    > * {
+                                        fill: white;
+                                    }
+                                }
+                            }
+                            &:not(.fill-icon){
+                                svg {
+                                    > * {
+                                        stroke: white;
+                                    }
+                                }
+                            }
+
+                        }
+                        .menu-text {
+                            color: $primary-color;
+                        }
+
+                    }
+                    > a{
+                       text-decoration: none;
+                    }
+                }
+                &.bottom{
+                    li{
+                        margin-bottom:0;
+                    }
+                }
+            }
+        }
+    }
+
+    .admin-section{
+        padding-left: $sidebar-width;
+    }
+}
+//header and container config
+$app--header: (
+    prop:(
+        pt:calculateRem(40px),
+        // px:calculateRem($container-px),
+        px:calculateRem(35px),
+        pb:calculateRem(16px),
+    )
+);
+
+.header-container{
+    padding: app-map-get($app--header, prop, pt) app-map-get($app--header, prop, px) app-map-get($app--header, prop, pb);
+}
+
+.container-area{
+    // padding: calculateRem(10px) calculateRem($container-px);
+    padding: calculateRem(10px) calculateRem(35px);
+}
+
+//menu list
+$app--menu-list: (
+    prop:(
+        py:calculateRem(8px),
+        px:calculateRem(20px),
+    ),
+    map-prop:(
+        color:$secondary-color,
+        font-family: $inter-family,
+        font-weight: 600,
+        font-size: calculateRem(14px),
+        border-radius:5px,
+        margin-right:calculateRem(10px),
+        transition: all .3s ease-in
+    ),
+    active-menu:(
+        prop:(
+            color : $primary-color,
+            bgColor : $color-6
+        )
+    )
+);
+.len-menu{
+    &.nav{
+        > li {
+            a {
+                &.nav-link{
+                    @include map-to-props(app-map-get($app--menu-list, map-prop));
+                    padding: app-map-get($app--menu-list, prop, py) app-map-get($app--menu-list, prop, px);
+                    cursor: pointer;
+                    &.active,
+                    &:hover{
+                        background-color : app-map-get($app--menu-list, active-menu, prop, bgColor);
+                        color : app-map-get($app--menu-list, active-menu, prop, color);
+                    }
+                }
+
+            }
+        }
+    }
+}
+//content section
+$content-header-ht:calculateRem(80px);
+.content-header{
+    // padding: calculateRem(20px) calculateRem($container-px);
+    padding: calculateRem(20px) calculateRem(33px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fixed($left:$sidebar-width,$top:0,$right:0);
+    border-bottom: 1px solid $color-4;
+    height: $content-header-ht;
+    background-color: white;
+    z-index: 999;
+}
+.content-wrapper {
+    padding-top: $content-header-ht;
+}
+
+#published-container{
+    > div{
+        &:not(.first-tier) {
+            .p-datatable{
+                .p-datatable-thead{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+$app--img-box: (
+    prop:(
+        w: calculateRem(90px),
+        h: calculateRem(65px),
+    )
+);
+
+.len-img-box{
+    width: app-map-get($app--img-box, prop, w);
+    height: app-map-get($app--img-box, prop, h);
+    @include relative();
+    > a {
+        @include absolute($top:50%,$left:50%);
+        transform: translate(-50%,-50%);
+    }
+}
+.page-link:hover{
+    background-color: inherit;
+    color: inherit
+  }
+  .centerAlign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pageNumbers{
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    color:#1E1E1E;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .activeGreen {
+    background-color:#0FB377;
+    color:#BEEA9C;
+    margin-left:0;
+  }
+  .pageDisabled{
+    background-color:#e3e7e6;
+    cursor: default;
+  }
+  .moveRight{
+    align-items: flex-end;
+    justify-content: flex-end;
+  }

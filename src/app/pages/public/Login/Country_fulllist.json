@@ -1,0 +1,10 @@
+[
+  {
+    "country": "Norway",
+    "flag": "https://lendwill-templates.s3.eu-north-1.amazonaws.com/Countries/Norway_Flag.png"
+  },
+  {
+    "country": "Lithuania",
+    "flag": "https://lendwill-templates.s3.eu-north-1.amazonaws.com/Countries/Lithuania_flag.png"
+  }
+]

@@ -1,0 +1,27 @@
+.forgotOtpContainer {
+    margin-top: 40%;
+}
+
+.generateOtpButtStyle {
+    padding: 0 65px;
+}
+
+.disableResentOtpLinkStyle{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #828282;
+    &:hover {
+        text-decoration: none;
+        color: #828282;
+    }
+}
+
+.emailTextFieldContainer{
+    position: relative;
+}
+
+.textFieldErrorStyle{
+    margin-top: -15px;
+}

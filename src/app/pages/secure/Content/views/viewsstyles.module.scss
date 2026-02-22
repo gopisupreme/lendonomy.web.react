@@ -1,0 +1,89 @@
+.chatContainer {
+  cursor: pointer;
+  position: relative;
+
+  span {
+    top: -9px;
+    right: 0;
+    position: absolute;
+  }
+
+  img {
+    height: 40px;
+    width: 40px;
+    background: #f2f2f2;
+    border-radius: 40px;
+    padding: 8px;
+  }
+}
+
+.comment {
+  font-family: Inter, sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e1e1e !important;
+
+  &_time {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+.ArtCmtDataTableStyle{
+  width: 100%;
+}
+
+.ArtCmtColumnStyle{
+  width: 50%;
+}
+
+.ArtCmtAuthorColumnStyle{
+  width: 20%;
+}
+
+.ArtCmtPostedColumnStyle{
+  width: 15%;
+}
+
+.stageDataTableStyle{
+  width: 100%;
+}
+
+.stageContNameHeaderStyle{
+  width: 180px;
+}
+
+.stageContNameColumnStyle{
+  text-align: center;
+}
+
+.stageContTypeHeaderStyle{
+  width: 80px;
+}
+
+.stageActionButtonStyle{
+  width: 100px;
+}
+
+.ReadyPublishDataTableStyle{
+  width:100%
+}
+
+.ReadyPublishNameHeaderStyle{
+  width: 160px;
+}
+
+.ReadyPublishNameColumnStyle{
+  text-align: center;
+}
+
+.ReadyPublishTypeHeaderStyle{
+  width: 100px;
+}
+
+.ReadyPublishInHeaderStyle{
+  width: 120px;
+}

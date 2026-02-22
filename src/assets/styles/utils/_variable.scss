@@ -1,0 +1,26 @@
+$base-font-size: 14px;
+$base-logo-width: 180px;
+$poppins-family:'Poppins', sans-serif;
+$inter-family:'Inter', sans-serif;
+//colors
+$primary-color : #0FB377;
+$secondary-color: #828282;
+$danger-color : #FB4179;
+//typo color
+$color-1: #1E1E1E;
+$color-2 : #4F4F4F;
+$color-3 : $secondary-color;
+$color-4 : #E0E0E0;
+$color-5 : #F2F2F2;
+$color-6 : #E7FED5;
+$color-7 : #BEEA9C;
+
+//avatar map config 
+$app--avatar:(
+    width:40px,
+    height:40px,
+    border-radius:50%
+);
+
+//layout
+$container-px : 60px;

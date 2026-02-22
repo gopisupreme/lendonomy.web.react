@@ -1,0 +1,91 @@
+$app--typo: (
+    header:(
+        map-prop:(
+            font-family: $poppins-family,
+            color: $color-1,
+            font-size: calculateRem(36px),
+            font-style: normal,
+            font-weight: bold,
+        ),
+        lg:(
+            fs: calculateRem(48px)
+        ),
+        sm:(
+            fs: calculateRem(28px)
+        ),
+        xs:(
+            fs: calculateRem(20px)
+        ),
+        xxs:(
+            fs: calculateRem(18px)
+        )
+    ),
+    desc-text:(
+        map-prop:(
+            font-family: $poppins-family,
+            font-size: calculateRem(24px),
+            color:$secondary-color
+        ),
+        xxs:(
+            fs: calculateRem(16px)
+        )
+    )
+);
+
+.len-header{
+    @include map-to-props(app-map-get($app--typo, header, map-prop));
+    &-lg{
+        font-size: app-map-get($app--typo, header, lg,fs);
+    }
+    &-sm{
+        font-size: app-map-get($app--typo, header, sm , fs);
+        font-weight: normal;
+    }
+    &-xs{
+        font-size: app-map-get($app--typo, header, xs , fs);
+        font-weight: normal;
+        &.bold{
+            font-weight: bold;
+        }
+    }
+    &-xxs{
+        font-size: app-map-get($app--typo, header, xxs , fs);
+        font-weight: normal;
+        &.bold{
+            font-weight: bold;
+        }
+    }
+}
+
+.text-primary{
+    &.link {
+        font-family: $inter-family;
+        font-weight: 600;
+        font-size: calculateRem(16px);
+        text-decoration: none;
+    }
+}
+
+.error-text {
+    font-family: Inter, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+color: #FB4179;
+}
+.header-desc-text{
+    @include map-to-props(app-map-get($app--typo, desc-text, map-prop));
+    &-xxs{
+        font-size: app-map-get($app--typo, desc-text, xxs, fs);
+    }
+}
+
+.tier-heading{
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    color: #828282;
+}

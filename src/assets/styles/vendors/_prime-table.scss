@@ -1,0 +1,297 @@
+$cell-py: 12px;
+$paginator-py: 40px;
+$app--len-table: (
+  th: (
+    map-prop: (
+      font-family: $inter-family,
+      font-weight: bold,
+      font-size: calculateRem(12px),
+      text-transform: uppercase,
+      background-color: white,
+      border: none,
+      border-bottom: 1px solid $color-4,
+      color: $secondary-color,
+      // text-align: left
+    ),
+  ),
+  td: (
+    map-prop: (
+      font-family: $inter-family,
+      font-size: calculateRem(14px),
+      color: $secondary-color,
+      background-color: white,
+      border: none,
+      border-bottom: 1px solid $color-4,
+      padding-top: calculateRem($cell-py),
+      padding-bottom: calculateRem($cell-py),
+    ),
+  ),
+  paginator: (
+    map-prop: (
+      display: flex,
+      align-items: center,
+      flex-wrap: wrap,
+      padding-top: calculateRem($paginator-py),
+      padding-bottom: calculateRem($cell-py),
+      background-color: white,
+      border: none,
+      justify-content: flex-end,
+    ),
+  ),
+  page-link: (
+    map-prop: (
+      font-family: $inter-family,
+      font-size: calculateRem(14px),
+      margin-right: calculateRem(5px),
+    ),
+  ),
+);
+
+.comments-table {
+  .p-datatable {
+    .p-datatable-scrollable-header {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 18px;
+        background-color: white;
+        height: 100%;
+      }
+    }
+    .p-datatable-emptymessage {
+      text-align: start;
+    }
+    .p-datatable-thead {
+      tr {
+        th {
+          @include map-to-props(app-map-get($app--len-table, th, map-prop));
+          text-align: start;
+        }
+        .p-sortable-column.p-highlight {
+          .p-sortable-column-icon {
+            color: #848484;
+            margin-left: calculateRem(12px);
+          }
+        }
+        .p-sortable-column {
+          .p-sortable-column-icon {
+            margin-left: calculateRem(12px);
+          }
+        }
+      }
+    }
+    .p-sortable-column:not(.p-highlight):hover {
+      background-color: white;
+    //   color:#828282;
+    }
+    .p-datatable-tbody {
+      tr {
+        td {
+          @include map-to-props(app-map-get($app--len-table, td, map-prop));
+        }
+      }
+    }
+  }
+}
+
+.all-table {
+  .p-datatable {
+    .p-datatable-scrollable-header {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 18px;
+        background-color: white;
+        height: 100%;
+      }
+    }
+    .p-datatable-emptymessage {
+      text-align: center;
+    }
+    .p-datatable-thead {
+      tr {
+        th {
+          @include map-to-props(app-map-get($app--len-table, th, map-prop));
+        }
+        .p-sortable-column.p-highlight {
+          .p-sortable-column-icon {
+            display: none;
+            // color: #848484;
+            // margin-left: calculateRem(12px);
+          }
+        }
+        .p-sortable-column {
+          .p-sortable-column-icon {
+            display: none;
+            // margin-left: calculateRem(12px);
+          }
+        }
+      }
+    }
+    .p-sortable-column:not(.p-highlight):hover {
+      background-color: white;
+      // color:#828282;
+    }
+    .p-datatable-tbody {
+      tr {
+        td {
+          @include map-to-props(app-map-get($app--len-table, td, map-prop));
+        }
+      }
+    }
+    .p-paginator {
+      @include map-to-props(app-map-get($app--len-table, paginator, map-prop));
+      .p-paginator-pages {
+        height: auto;
+        .p-paginator-page {
+          background-color: $color-5;
+          color: $color-1;
+          @include map-to-props(
+            app-map-get($app--len-table, page-link, map-prop)
+          );
+          &.p-highlight {
+            background-color: $primary-color;
+            color: $color-7;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ts-table {
+  .p-datatable {
+    .p-datatable-scrollable-header {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 18px;
+        background-color: white;
+        height: 100%;
+      }
+    }
+    .p-datatable-emptymessage {
+      text-align: center;
+    }
+    .p-datatable-thead {
+      tr {
+        th {
+          @include map-to-props(app-map-get($app--len-table, th, map-prop));
+          border-bottom: none !important;
+          color: $color-2;
+          text-align: start;
+          width: calculateRem(119px);
+        }
+      }
+    }
+    .p-datatable-tbody {
+      tr {
+        td {
+          @include map-to-props(app-map-get($app--len-table, td, map-prop));
+          text-align: start;
+          border-bottom: none !important;
+          font-family: $poppins-family;
+          font-weight: 400;
+          color: black;
+          width: calculateRem(119px);
+        }
+      }
+    }
+  }
+}
+
+
+.len-datatable {
+  .p-datatable {
+    .p-datatable-scrollable-header {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 18px;
+        background-color: white;
+        height: 100%;
+      }
+    }
+    .p-datatable-emptymessage {
+      text-align: center;
+    }
+    .p-datatable-thead {
+      tr {
+        th {
+          @include map-to-props(app-map-get($app--len-table, th, map-prop));
+        }
+        .p-sortable-column.p-highlight {
+          .p-sortable-column-icon {
+            color: #848484;
+            margin-left: calculateRem(12px);
+          }
+        }
+        .p-sortable-column {
+          .p-sortable-column-icon {
+            margin-left: calculateRem(12px);
+          }
+        }
+      }
+    }
+    .p-sortable-column:not(.p-highlight):hover {
+      background-color: white;
+      // color:#828282;
+    }
+    .p-datatable-tbody {
+      tr {
+        td {
+          @include map-to-props(app-map-get($app--len-table, td, map-prop));
+        }
+      }
+    }
+    .p-paginator {
+      @include map-to-props(app-map-get($app--len-table, paginator, map-prop));
+      .p-paginator-pages {
+        height: auto;
+        .p-paginator-page {
+          background-color: $color-5;
+          color: $color-1;
+          @include map-to-props(
+            app-map-get($app--len-table, page-link, map-prop)
+          );
+          &.p-highlight {
+            background-color: $primary-color;
+            color: $color-7;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.generateTable{
+    .p-datatable {
+      .p-paginator{
+        display: none;
+      }
+    }
+  }
+}

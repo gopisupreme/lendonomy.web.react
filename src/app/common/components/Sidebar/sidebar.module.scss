@@ -1,0 +1,63 @@
+.logoutContainerStyle{
+    margin-bottom: 0.6rem !important;
+}
+
+.flagContainer{
+  display: flex;
+  padding: 0.3rem 1.4rem;
+}
+
+.flagImgContainer{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    margin-top: 1.5px;
+    cursor: pointer;
+}
+
+.flagImgStyle{
+    height: 18px;
+    width: 33.23px;
+    margin-right: 0;
+}
+
+.flagNameStyle{
+    display: block;
+    width:150px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4F4F4F;
+    padding-left: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.side_bar{
+    overflow-y: auto;
+}
+
+.side_bar::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+.side_bar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px gray; 
+    border-radius: 10px;
+}
+
+
+.side_bar::-webkit-scrollbar-thumb {
+    background: #E0E0E0; 
+    border-radius: 10px;
+}
+
+
+.side_bar::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+}

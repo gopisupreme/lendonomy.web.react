@@ -1,0 +1,56 @@
+$panel-py: calculateRem(20px);
+%list-font-prop{
+    font-family: $inter-family;
+    font-weight: bold;
+    font-size: calculateRem(12px);
+}
+%list-prop{
+    background-color: transparent !important;
+    border: none !important;
+}
+.len-tab{
+    &.p-tabview{
+        padding: 0;
+        .p-tabview-nav{
+            margin-left: calculateRem($container-px);
+            margin-bottom: calculateRem(25px) !important;
+            .p-unselectable-text{
+                a {
+                    @extend %list-prop;
+                    @extend %list-font-prop;
+                    color: $color-2;
+                    
+                    &:focus{
+                        box-shadow: none !important;
+                    }
+                }
+                &.p-highlight{
+                    a{
+                        @extend %list-prop;
+                        @extend %list-font-prop;
+                        color: $primary-color;
+                    }
+                }
+                &:hover{
+                    a {
+                        @extend %list-prop;
+                        color: $primary-color !important;
+                    }
+                    
+                }
+                &:first-child{
+                    margin-right: calculateRem(60px);
+                }
+            }
+        }
+        .p-tabview-panels{
+            padding: 0;
+            border: none;
+            .p-tabview-panel{
+                padding-top: $panel-py;
+                padding-bottom: $panel-py;
+                border-top:1px solid $color-4;
+            }
+        }
+    }
+}

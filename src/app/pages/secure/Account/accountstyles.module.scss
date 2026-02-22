@@ -1,0 +1,563 @@
+@import '../../../../assets/styles/utils/_variable';
+@import '../../../../assets/styles/utils/_function';
+
+.inv {
+  background-color: #e7fed5;
+}
+.bor {
+  background-color: #ecdafe;
+  width: inherit;
+}
+.tableHeader {
+  background-color: #828282;
+}
+
+.headerTextColor {
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.iconBtnnLeft {
+  display: flex;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 0.29);
+  border-radius: 40px;
+  padding: 22px;
+
+  margin: 0 24px 0 0;
+
+  &:hover {
+    background-color: rgba(196, 196, 196, 0.7);
+  }
+}
+
+.iconBtnnRight {
+  display: flex;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 0.29);
+  border-radius: 40px;
+  padding: 22px;
+  margin: 0 0 0 24px;
+
+  &:hover {
+    background-color: rgba(196, 196, 196, 0.7);
+  }
+}
+
+.reportUser {
+  // flex: 1;
+  display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  padding: 14px 8px;
+}
+
+.column {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: space-evenly;
+}
+
+.pPoppins {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.pInter {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.centerAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageNumbers {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #1e1e1e;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+.activeGreen {
+  background-color: #0fb377;
+  color: #beea9c;
+  margin-left: 0;
+}
+.pageDisabled {
+  background-color: #e3e7e6;
+  cursor: default;
+}
+.moveRight {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.reportUserWrapper {
+  display: flex;
+  justify-self: start;
+  width: 90vw;
+  padding: 10px;
+  cursor: pointer;
+}
+.colProfile {
+  width: 145px;
+  margin-right: 5px;
+}
+.colContacts {
+  width: 250px;
+  margin-right: 5px;
+}
+.colAmmount {
+  width: 150px;
+  margin-right: 5px;
+}
+.dob {
+  width: 120px;
+  margin-right: 5px;
+}
+.trustScore {
+  width: 60px;
+  margin-right: 5px;
+}
+.loan {
+  width: 160px;
+  margin-right: 5px;
+}
+.defaulted {
+  width: 120px;
+  margin-right: 5px;
+}
+.action {
+  width: 0;
+  // margin:10px auto;
+}
+
+.addressInfo {
+  font-size: 24px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.subTabHeading {
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.bottomText {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.profileName {
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.header {
+  text-transform: uppercase;
+  font-family: $inter-family;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.disCont {
+  opacity: .7;
+  pointer-events: none;
+}
+
+.trustScoreCont {
+  margin-top: calculateRem(8px);
+  padding: calculateRem(10px) calculateRem(35px) calculateRem(64px) calculateRem(35px);
+}
+
+.reporteeAndReporter {
+  display: flex;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.profileWrapper {
+  max-width: 150%;
+  overflow: auto;
+}
+.rowData {
+  display: flex;
+  justify-content: space-between;
+}
+.col {
+  margin-right: 2px;
+}
+.whiteBG {
+  width: 93vw;
+}
+.wrapper {
+  width: 100%;
+}
+.rowDataBehaviour {
+  display: flex;
+  justify-content: flex-start;
+}
+.colBehaviour {
+  margin-right: 15px;
+}
+
+.dataTableStyle {
+  width: 100%
+}
+
+.allAccountProfileHeaderStyle{
+  width: 48px;
+}
+
+.allAccountProfileImgStyle{
+  width: 48px;
+  height: 48px; 
+  border-radius: 24px;
+}
+
+.allAccountHeaderStyle{
+  width: 180px;
+  text-align: center;
+}
+
+.allAccountNameStyle{
+  font-weight: 700;
+  color: #1E1E1E;
+  text-align: center;
+}
+
+.allAccountcontactStyle{
+  text-align: center;
+}
+
+.allAccountAmountHeaderStyle{
+  width: 150px;
+  text-align: center;
+}
+
+.allAccountCreationHeaderStyle{
+  width: 140px;
+  text-align: center;
+}
+
+.allAccountTrustHeaderStyle{
+  width: 100px;
+  text-align: center;
+}
+
+.sortHeaderContainerStyle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sortHeaderIconStyle{
+  margin-left: 12px,
+}
+
+.allBlockedContactHeaderStyle{
+  width: 120px;
+}
+
+.allBlockedContactStyle{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.allBlockedReasonHeaderStyle{
+  width: 150px;
+}
+
+.allBlockedTrustHeaderStyle{
+  width: 100px;
+}
+
+.allReportUserAlign{
+  align-items: center;
+}
+
+.allReportNameHeaderStyle{
+  text-align: center;
+  padding-left: 20px;
+}
+
+.allReportRowStyle{
+  font-weight: bolder;
+}
+
+.allReportRowArrowIconStyle{
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.allReportTableContentStyle{
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.allReportTableHeaderStyle{
+  display: none;
+}
+
+.allReportTableRowStyle{
+  height: 60px;
+  // background-color: red !important ;
+}
+
+.allRecoverNameStyle{
+  width: 180px;
+}
+
+.allRecoverDeletedOnStyle{
+  width: 115px;
+}
+
+.allDeletedDataTableStyle{
+  width: 100%;
+  cursor: pointer;
+}
+
+.indGetProfileImgContainer{
+   margin-top: 10px;
+   text-align: center;
+}
+
+.indGetProfileImgStyle{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+}
+
+.indGetProfileContentSpace{
+  margin-left: 30px;
+}
+
+.indGetAccountContainer{
+  background-color:#E7FED5;
+  width: 93vw;
+}
+
+.indGetAccountLastOnline{
+  color: #0FB377;
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+
+.indGetAccountFeeText{
+  font-size: 1.5rem;
+}
+
+.indGetBehaviourLeastText{
+  color: #FB4179;
+  font-size: 3.4rem;
+}
+
+.indGetAddDetuctIconStyle{
+  &:before{
+  font-size: 2rem;
+  }
+}
+
+.indGetAddDetuctPointContainer{
+  background-color: rgba(196, 196, 196, 0.29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 229px;
+  border-radius: 8px;
+}
+
+.indGetAddDetuctPositivePoint{
+  color: #0FB377;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 50.4px;
+}
+
+.indGetAddDetuctNegativePoint{
+  color: #FB4179;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 50.4px;
+}
+
+.indGetAddDetuctTextAreaContainer{
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.indGetAddDetuctTextAreaStyle{
+   border: none;
+   resize: none;
+   background-color: transparent;
+   padding: 8px;
+   width: 100%;
+}
+
+.indGetAddDetuctButtonStyle{
+  padding: 0 24px;
+}
+
+.indDataTableStyle{
+  width: 100%;
+}
+
+.indDataTableCommentStyle{
+  width: 349px;
+}
+
+.IndNavLeftIconStyle{
+  &:before{
+  font-size: 2rem;
+  }
+}
+
+.loanDiaContainer{
+  width: 70vw;
+  border: none;
+}
+
+.loanDialogDataTableStyle{
+   width: 100%;
+   cursor: pointer;
+   font-weight: 900;
+   text-align: center;
+}
+
+.loanDialogDataTableEmptyStyle{
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.loanActDateColHeaderStyle{
+  text-align: left !important;
+  background-color: #fff !important;
+  border: none !important;
+  padding-left: 0 !important;
+  text-transform: uppercase ;
+}
+
+.loanActDateColStyle{
+  text-align: left;
+  background-color: #fff !important;
+  border: none !important;
+  padding-left: 0 !important;
+}
+
+.loanInvColHeaderStyle{
+  text-align: left !important;
+  background-color: #fff !important;
+  border: none !important;
+  text-transform: uppercase;
+}
+
+.loanInvColStyle{
+  text-align: left;
+  background-color: #fff !important;
+  border: none !important;
+}
+
+.loanInvNoteSHeaderStyle{
+  text-align: center !important;
+  background-color: #fff !important;
+  border: none !important;
+  text-transform: uppercase;
+}
+
+.loanInvNotColStyle{
+  text-align: center;
+  background-color: #fff !important;
+  border: none !important;
+}
+
+.loanActSaveColStyle{
+  border: none !important;
+  background-color: #fff !important;
+}
+
+.loanDefaultDataTableStyle{
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.loanDefaultDataTableEmptyStyle{
+ width: 100%;
+ cursor: pointer;
+ margin-top: 20px;
+ text-align: left;
+}
+
+.loanErrMsgStyle{
+  position: absolute;
+  color: #FB4179 ;
+  padding-top: 5px;
+}
+
+.loanActHeaderStyle{
+  color: #4F4F4F;
+}
+
+.loanActEmpStyle{
+  margin-top: 0;
+  height: 140px;
+}
+
+.loanDefaultHeaderStyle{
+  margin-top: 20px;
+  color: #4F4F4F;
+}
+
+.loanEmpDefaultHeader{
+  margin-top: 0;
+  padding-bottom: 41px;
+  color: #4F4F4F;
+}
+
+.loanEmpDefaultStyle{
+  padding-top: 0;
+  height: 160px;
+}

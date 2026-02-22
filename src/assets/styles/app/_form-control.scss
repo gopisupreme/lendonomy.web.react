@@ -1,0 +1,65 @@
+$app--form: (
+    form:(
+        label:(
+            map-prop:(
+                font-family: $inter-family,
+                font-style: normal,
+                font-weight: bold,
+                font-size: calculateRem(12px),
+                letter-spacing: 0.02em,
+                text-transform: uppercase,
+                color: $color-2
+            )
+        ),
+        form-control:(
+            map-prop:(
+                font-family: $inter-family,
+                font-style: normal,
+                font-weight: normal,
+                font-size: calculateRem(14px),
+                color: $color-3
+            )
+        )
+    )
+);
+
+form{
+    label{
+        @include map-to-props(app-map-get($app--form, form, label , map-prop));
+    }
+    .p-field{
+        .form-control {
+            @include map-to-props(app-map-get($app--form, form, form-control , map-prop));
+            resize: none;
+        }
+    }
+}
+
+$box-padding:12px;
+.search-input {
+    @include relative();
+    .prepend{
+        @include absolute($top:0, $left:0);
+        height: 100%;
+        padding: calculateRem($box-padding);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-control{
+        padding-left: calc((#{$box-padding} * 2) + 24px);
+    }
+
+    .append{
+        @include absolute($top:0, $right:0);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-right: calculateRem(8px);
+        button{
+            font-family: $inter-family;
+            font-weight: 600;
+            font-size: calculateRem(14px);
+        }
+    }
+}

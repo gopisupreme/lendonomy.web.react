@@ -1,0 +1,79 @@
+@function app-map-get($map, $keys...) {
+    @if length($keys) == 1 {
+        $keys: nth($keys, 1);
+    }
+
+    $warn: "#{nth($keys, 1)}";
+    $length: length($keys);
+    $get: map-get($map, nth($keys, 1));
+
+    @if $length > 1 {
+        @for $i from 2 through $length {
+            @if $get != null and type-of($get) == 'map' {
+                $warn: $warn + "->#{nth($keys, $i)}";
+                $get: map-get($get, nth($keys, $i));
+
+                @if $get == null {
+                    @return null;
+                }
+            }
+            @else {
+                @return array-get-warning($warn, $get, nth($keys, $i));
+            }
+        }
+    }
+
+    @return $get;
+}
+
+//== Map Get Deep Warning
+// Displays a warning if the retrieved value is `null`
+@function app-array-get-warning($warn, $get, $key) {
+    @if $get == null {
+        @warn "Map has no value for key search `#{$warn}`";
+    }
+    @else if type-of($get) != 'map' {
+        @warn "Non-map value found for key search `#{$warn}`, cannot search for key `#{$key}`";
+    }
+    @return null;
+}
+
+
+@function decimal-round($number, $digits: 0, $mode: round) {
+    $n: 1;
+    // $number must be a number
+    @if type-of($number) != number {
+        @warn '#{ $number } is not a number.';
+        @return $number;
+    }
+    // $digits must be a unitless number
+    @if type-of($digits) != number {
+        @warn '#{ $digits } is not a number.';
+        @return $number;
+    } @else if not unitless($digits) {
+        @warn '#{ $digits } has a unit.';
+        @return $number;
+    }
+    @if $digits > 0 {
+        @for $i from 1 through $digits {
+            $n: $n * 10;
+        }
+    }
+    @if $mode == round {
+        @return round($number * $n) / $n;
+    } @else if $mode == ceil {
+        @return ceil($number * $n) / $n;
+    } @else if $mode == floor {
+        @return floor($number * $n) / $n;
+    } @else {
+        @warn '#{ $mode } is undefined keyword.';
+        @return $number;
+    }
+}
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+    $remSize: decimal-round(($size / $base-font-size),1);
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+    
+}

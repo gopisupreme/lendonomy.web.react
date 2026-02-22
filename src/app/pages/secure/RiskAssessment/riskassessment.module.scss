@@ -1,0 +1,512 @@
+@import '../../../../assets/styles/utils/_variable';
+@import '../../../../assets/styles/utils/_function';
+
+.subTitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calculateRem(22px);
+  line-height: 140%;
+  color: #1E1E1E;
+}
+
+.subHeader {
+  @extend .subTitle;
+  font-size: calculateRem(18px);
+  color: #4F4F4F;
+  padding: 20px 0;
+}
+
+.label {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calculateRem(16px);
+  line-height: calculateRem(20px);
+  color: #828282;
+}
+
+.table {
+  tr {
+    &:first-child {
+      background: #828282;
+      border: 0.5px solid #828282;
+    }
+  }
+
+  th {
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: calculateRem(16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: calculateRem(22px);
+    letter-spacing: 0em;
+    color: #FFFFFF
+  }
+  
+  td {
+    padding: 2px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #232326;
+    border: 0.5px solid #828282;
+    border-radius: 1px;
+
+    &:first-child {
+      width: calculateRem(120px);
+      font-size: calculateRem(15px);
+      line-height: calculateRem(20px);
+    }
+
+    &:last-child {
+      text-align: left;
+      width: calculateRem(300px);
+      font-size: calculateRem(11px);
+      line-height: calculateRem(18px);
+    }
+  }
+}
+
+.pageNumbers {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #1e1e1e;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+.activeGreen {
+  background-color: #0fb377;
+  color: #beea9c;
+  margin-left: 0;
+}
+.pageDisabled {
+  display: none;
+}
+
+.moveRight {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.wrapper.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem 0;
+
+  p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    word-break: break-all;
+  }
+  svg {
+    position: absolute;
+    right: -16px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@mixin iconBtn {
+  position: absolute;
+  bottom: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.iconCancel {
+  @include iconBtn;
+  background-color: #fb4179;
+  left: -8px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+
+    > * {
+      stroke: #fff;
+    }
+  }
+}
+
+.iconTick {
+  @include iconBtn;
+  right: -8px;
+  background-color: #0fb377;
+}
+
+.txtArea {
+  border-color: #e0e0e0;
+  border-radius: 4px;
+  resize: none;
+  font-size: 12px;
+}
+
+.pPoppins {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.pepSelectCustomIconStyle{
+  padding-left: 6px;
+}
+
+.pepSelectCloseIconStyle{
+  background-color: #0FB377 !important;
+}
+
+.pepDataTableStyle{
+  width: 100%;
+  padding-top: 16px;
+}
+
+.pepTableProfileHeaderStyle{
+  width: 68px;
+}
+
+.pepTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.pepTableNameHeaderStyle{
+ text-align: center !important;
+}
+
+.pepTableNameColumnStyle{
+  font-weight: 700;
+  text-align: center;
+ }
+
+ .pepTableContactColumnStyle{
+   text-align: center;
+ }
+
+ .pepTableContactValueStyle{
+  font-size: 12px;
+}
+
+.pepTableRisktypeSelectStyle{
+  border: none;
+  font-size: 1rem;
+  width: 115px;
+}
+
+.pepTableUseAppSelectStyle{
+  border: none;
+  font-size: 1rem;
+}
+
+.pepTableSaveHeaderStyle{
+  border: none !important;
+  width: 100px;
+}
+
+.pepTableSaveColumnStyle{
+  border: none !important;
+}
+
+.pepDialogStyle{
+  width: 50vw;
+}
+
+.pepTableTextAreaStyle{
+  position: relative;
+}
+
+.creditRemarkTableHeaderStyle{
+  text-align: center !important;
+}
+
+.creditRemarkTableColumnStyle{
+  text-align: center;
+}
+
+.creditRemarksValueContainer{
+  background-color: #dbdada;
+  padding: 16px;
+}
+
+.creditRemarksValueHeaderStyles{
+   font-weight: 600;
+   font-size: 12px;
+   text-align: left;
+   color: #000000;
+}
+
+.creditRemarksValueStyles{
+  font-size: 12px;
+  text-align: left;
+  color: #000000;
+}
+
+.creditRemarksNextValueHeaderStyles{
+  font-weight: 600;
+  font-size: 12px;
+  text-align: left;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.creditUseAppSelectStyle{
+  //border: none;
+  font-size: 1rem;
+}
+
+.creditTableEmptyHeaderStyle{
+    border: none !important;
+    width: 100px;
+}
+
+.creditTableEmptyColumnStyle{
+   border: none !important;
+   text-align: right;
+}
+
+.creditRiskCustomCloseIconStyle{
+  width: 24px !important;
+  height: 24px;
+  background-color: #0FB377 !important;
+  margin-left: 10px !important;
+}
+
+.creditRiskCloseIconStyle{
+  background-color: #0FB377 !important;
+}
+
+.creditDataTableStyle{
+  width: 100%;
+  padding-top: 20px;
+}
+
+.creditTableProfileHeaderStyle{
+  width: 68px;
+}
+
+.creditTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.creditTableNameHeaderStyle{
+  text-align: center !important;
+}
+
+.creditTableNameColumnStyle{
+  font-weight: 700;
+  text-align: center;
+}
+
+.creditTablecontactColumnStyle{
+ text-align: center;
+}
+
+.creditTableContactValueStyle{
+  font-size: 12px;
+}
+
+.creditTableFlagHeaderStyle{
+ width: 100px;
+ text-align: center !important;
+}
+
+.creditTableRiskSelectStyle{
+   padding: 10px 10px 10px 0;
+   border-color: #A09E9E;
+   border-radius: 5px;
+   font-size: 0.9rem;
+   width: 100%;
+}
+
+.creditTableExpandHeaderStyle{
+  border: none !important;
+  width: 100px;
+}
+
+.creditTableExpandColumnStyle{
+  border: none !important;
+  text-align: right;
+  right: 30px;
+}
+
+.creditDialogStyle{
+ width: 50vw;
+}
+
+.annualDataTableStyle{
+  width: 100%;
+}
+
+.annualTableProfileHeaderStyle{
+  width: 68px;
+}
+
+.annualTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.annualTableNameHeaderStyle{
+  text-align: center !important;
+}
+
+.annualTableNameColumnStyle{
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.annualTableContactHeaderStyle{
+  width: 120px;
+  text-align: center !important;
+}
+
+.annualTableContactColumnStyle{
+ text-align: center;
+ cursor: pointer;
+}
+
+.annualTableContactValueStyle{
+  font-size: 12px;
+}
+
+.annualTableFlagHeaderStyle{
+  width: 100px;
+  text-align: center !important;
+}
+
+.annualTableFlagColumnStyle{
+ text-align: center;
+}
+
+.annualTableWithMillHeaderStyle{
+  width: 172px;
+  text-align: center !important;
+}
+
+.annualTableResetHeaderStyle{
+    border: none !important;
+    width: 250px;
+}
+
+.annualTableResetColumnStyle{
+  border: none !important;
+}
+
+.annualTableTextAreaStyle{
+  position: relative;
+}
+
+.tranSelectCustomIconStyle{
+  padding-left: 6px;
+}
+
+.tranSelectCloseIconStyle{
+  background-color: #0FB377 !important;
+}
+
+.tranDataTableStyle{
+  width: 100%;
+  padding-top: 16px;
+}
+
+.tranTableProfileHeaderStyle{
+  width: 68px;
+}
+
+.tranTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.tranTableNameHeaderStyle{
+ text-align: center !important;
+}
+
+.tranTableNameColumnStyle{
+  font-weight: 700;
+  text-align: center;
+ }
+
+ .tranTableContactColumnStyle{
+   text-align: center;
+ }
+
+ .tranTableContactValueStyle{
+  font-size: 12px;
+}
+
+.tranTableFlagHeaderStyle{
+ width: 100px;
+ text-align: center !important;
+}
+
+.tranTableFlagStatusSelectStyle{
+  border: none;
+  font-size: 1rem;
+ }
+
+ .tranTableNotesHeaderStyle{
+  width: 172px;
+  text-align: center !important;
+}
+
+.tranTableSaveHeaderStyle{
+  border: none !important;
+  width: 100px;
+}
+
+.tranTableSaveColumnStyle{
+border: none !important;
+}
+
+.tranTableTextAreaStyle{
+  position: relative;
+}

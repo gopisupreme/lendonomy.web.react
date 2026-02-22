@@ -1,0 +1,585 @@
+@import '../../../../assets/styles/utils/_variable';
+@import '../../../../assets/styles/utils/_function';
+
+.subTitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calculateRem(22px);
+  line-height: 140%;
+  color: #1e1e1e;
+}
+
+.subTitleNOLoan {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: calculateRem(36px);
+  line-height: 140%;
+  color: #1e1e1e;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.subHeader {
+  @extend .subTitle;
+  font-size: calculateRem(18px);
+  color: #4f4f4f;
+  padding: 20px 0;
+}
+
+.label {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calculateRem(16px);
+  line-height: calculateRem(20px);
+  color: #828282;
+}
+
+.table {
+  tr {
+    &:first-child {
+      background: #828282;
+      border: 0.5px solid #828282;
+    }
+  }
+
+  th {
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: calculateRem(16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: calculateRem(22px);
+    letter-spacing: 0em;
+    color: #ffffff;
+  }
+
+  td {
+    padding: 2px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #232326;
+    border: 0.5px solid #828282;
+    border-radius: 1px;
+
+    &:first-child {
+      width: calculateRem(120px);
+      font-size: calculateRem(15px);
+      line-height: calculateRem(20px);
+    }
+
+    &:last-child {
+      text-align: left;
+      width: calculateRem(300px);
+      font-size: calculateRem(11px);
+      line-height: calculateRem(18px);
+    }
+  }
+}
+.p-dialog-titlebar {
+  .downloadButton {
+    margin-right: 0px;
+    position: absolute;
+    right: 50px;
+    top: 22px;
+  }
+}
+
+.pageNumbers {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #1e1e1e;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+.activeGreen {
+  background-color: #0fb377;
+  color: #beea9c;
+  margin-left: 0;
+}
+.pageDisabled {
+  display: none;
+}
+
+.moveRight {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.wrapper.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem 0;
+
+  p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    word-break: break-all;
+  }
+  svg {
+    position: absolute;
+    right: -16px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@mixin iconBtn {
+  position: absolute;
+  bottom: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.iconCancel {
+  @include iconBtn;
+  background-color: #fb4179;
+  left: -8px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+
+    > * {
+      stroke: #fff;
+    }
+  }
+}
+
+.iconTick {
+  @include iconBtn;
+  right: -8px;
+  background-color: #0fb377;
+}
+
+.txtArea {
+  border-color: #e0e0e0;
+  border-radius: 4px;
+  resize: none;
+  font-size: 12px;
+}
+
+.pPoppins {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.newDataTableStyle{
+  width: 100%;
+}
+
+.newDataTableBlockStyle{
+  display: block;
+}
+
+.newDataTableNoneStyle{
+  display: none;
+}
+
+.newTableProfileHeaderStyle{
+  width: 18px;
+}
+
+.newTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.newTableNameHeaderStyle{
+  width: 40px;
+  text-align: center !important;
+}
+
+.newTableNameColumnStyle{
+  text-align: center;
+}
+
+.newTableContactHeaderStyle{
+  width: 80px;
+}
+
+.newTableContactColumnStyle{
+  text-align: center;
+}
+
+.newTableContactValueStyle{
+  font-size: 12px;
+}
+
+.newTableCreationColumnStyle{
+  margin: auto;
+  text-align: center;
+}
+
+.actDataTableStyle{
+  width: 100%;
+}
+
+.actTableBlockStyle{
+  display: block;
+}
+
+.actDataTableNoneStyle{
+  display: none;
+}
+
+.actTableProfileHeaderStyle{
+  width: 48px;
+}
+
+.actTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.actTableBnameHeaderStyle{
+  width: 85px;
+  text-align: center !important;
+}
+
+.actTableBnameColumnStyle{
+  text-align: center;
+}
+
+.actTableContactHeaderStyle{
+  width: 80px;
+}
+
+.actTableContactValueStyle{
+  font-size: 12px;
+}
+
+.actTableContractHeaderStyle{
+  width: 60px;
+}
+
+.actTableContractValueStyle{
+ text-align: center;
+ text-decoration: underline;
+}
+
+.RiskDataTableStyle{
+  width: 100%;
+}
+
+.RiskTableBlockStyle{
+  display: block;
+}
+
+.RiskDataTableNoneStyle{
+  display: none;
+}
+
+.RiskTableProfileHeaderStyle{
+  width: 48px;
+}
+
+.RiskTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.RiskTableBnameHeaderStyle{
+  width: 85px;
+  text-align: center !important;
+}
+
+.RiskTableBnameColumnStyle{
+  text-align: center;
+}
+
+.RiskTableContactHeaderStyle{
+  width: 80px;
+}
+
+.RiskTableContactValueStyle{
+  font-size: 12px;
+}
+
+.RiskTableContractHeaderStyle{
+  width: 60px;
+}
+
+.RiskTableContractValueStyle{
+ text-align: center;
+ text-decoration: underline;
+}
+
+.mfeeDataTableStyle{
+  width: 100%;
+}
+
+.mfeeTableBlockStyle{
+  display: block;
+}
+
+.mfeeDataTableNoneStyle{
+  display: none;
+}
+
+.mfeeTableProfileHeaderStyle{
+  width: 35px;
+}
+
+.mfeeTableProfileImgStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 20px;
+}
+
+.mfeeTableBnameHeaderStyle{
+  width: 80px;
+  text-align: center !important;
+}
+
+.mfeeTableBnameColumnStyle{
+  text-align: center;
+}
+
+.mfeeTableContactHeaderStyle{
+  width: 80px;
+}
+
+.mfeeTableContactValueStyle{
+  font-size: 12px;
+}
+
+.mfeeTableAccuredValueStyle{
+  margin: auto;
+}
+
+.actDialogStyle{
+   width: 50vw;
+}
+
+.actDialogDownloadContainer{
+  margin-right: 0;
+  position: absolute;
+  right: 50px;
+  top: 22px;
+}
+
+.indGetProfileImgContainer{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.indGetProfileImgStyle{
+ width: 120px;
+ height: 120px;
+ border-radius: 60px;
+}
+
+.indGetProfileContentSpace{
+ margin-left: 50px;
+}
+
+.indGetAccountContainer{
+ background-color:#E7FED5;
+ width: 93vw;
+}
+
+.indGetAccountLastOnline{
+ color: #0FB377;
+ font-size: 3.4rem;
+ font-weight: 500;
+}
+
+.indGetAccountFeeText{
+ font-size: 1.5rem;
+}
+
+.indGetBehaviourLeastText{
+ color: #FB4179;
+ font-size: 3.4rem;
+}
+
+.indGetAddDetuctIconStyle{
+ &:before{
+ font-size: 2rem;
+ }
+}
+
+.indGetAddDetuctPointContainer{
+ background-color: rgba(196, 196, 196, 0.29);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100px;
+ width: 229px;
+ border-radius: 8px;
+}
+
+.indGetAddDetuctPositivePoint{
+ color: #0FB377;
+ font-size: 36px;
+ text-align: center;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 700;
+ line-height: 50.4px;
+}
+
+.indGetAddDetuctNegativePoint{
+ color: #FB4179;
+ font-size: 36px;
+ text-align: center;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 700;
+ line-height: 50.4px;
+}
+
+.indGetAddDetuctTextAreaContainer{
+ background-color: #F2F2F2;
+ border-radius: 8px;
+ flex: 1;
+}
+
+.indGetAddDetuctTextAreaStyle{
+  border: none;
+  resize: none;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.indGetAddDetuctButtonStyle{
+ padding: 0 24px;
+}
+
+.indDataTableStyle{
+ width: 100%;
+}
+
+.indDataTableCommentStyle{
+ width: 349px;
+}
+
+.IndNavLeftIconStyle{
+ &:before{
+ font-size: 2rem;
+ }
+}
+
+.creditRiskCloseIconStyle{
+  background-color: #0FB377 !important;
+}
+
+.RiskDataTableWithPadStyle{
+  width: 100%;
+  padding-top: 20px;
+}
+
+.creditTableExpandHeaderStyle{
+  border: none !important;
+  width: 25px;
+}
+
+.creditTableExpandColumnStyle{
+  border: none !important;
+  text-align: right;
+  right: 30px;
+}
+
+.creditTableRiskSelectStyle{
+  padding: 10px 10px 10px 0;
+  border-color: #A09E9E;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.creditTableEmptyHeaderStyle{
+  border: none !important;
+  width: 100px;
+}
+
+.creditTableEmptyColumnStyle{
+ border: none !important;
+ text-align: right;
+}
+
+.defaultRowLoanColumn{
+  width: 150px
+}
+
+.defaultGraceHeaderStyle{
+   text-align: center !important;
+   width: 100px
+}
+
+.defaultGraceColumnStyle{
+   text-align: center;
+}
+
+.defaultCollectionHeaderStyle{
+  text-align: center !important;
+  width: 200px;
+}
+
+.defaultReimburseHeaderStyle{
+  text-align: center !important;
+  width: 200px;
+}
+
+.defaultTextHeaderStyle{
+  text-align: left !important;
+  width: 339px;
+}
+
+.defaultTextAreaErrStyle{
+  color: #FB4179;
+  text-align: left;
+}
+
+.defaultSaveHeaderStyle{
+  text-align: center !important;
+  width: 150px;
+}

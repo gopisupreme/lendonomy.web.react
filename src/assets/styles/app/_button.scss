@@ -1,0 +1,46 @@
+$btn-padding-lg: 16px;
+
+$app--btn: (
+    default:(
+        map-prop:(
+            font-family: $poppins-family,
+            font-style: normal,
+            font-weight: bold,
+            font-size: calculateRem(16px),
+            line-height: calculateRem(24px),
+            text-align: center,
+            letter-spacing: 0.02em,
+            
+        )
+    ),
+    pill:(
+        prop:(
+            br:calculateRem(32px)
+        ),
+        lg:(
+            prop:(
+                pt:calculateRem($btn-padding-lg),
+                pb:calculateRem($btn-padding-lg)
+            )
+        )
+    )
+);
+
+.btn{
+    @include map-to-props(app-map-get($app--btn, default, map-prop));
+    &.btn-pill{
+        border-radius: app-map-get($app--btn, pill, prop, br);
+        &-lg{
+            padding-top: app-map-get($app--btn, pill, lg, prop, pt);
+            padding-bottom: app-map-get($app--btn, pill, lg, prop, pb);
+        }
+    
+    }
+}
+
+.btn-disabled, .btn-disabled:hover, .btn-disabled:active{
+    background-color: rgb(148, 141, 141);
+    border:none;
+    cursor: auto;
+    pointer-events: none;
+}

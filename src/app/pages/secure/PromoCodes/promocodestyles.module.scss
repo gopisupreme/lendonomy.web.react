@@ -1,0 +1,341 @@
+@import '../../../../assets/styles/utils/_variable';
+@import '../../../../assets/styles/utils/_function';
+
+.pageNumbers {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #1e1e1e;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+.activeGreen {
+  background-color: #0fb377;
+  color: #beea9c;
+  margin-left: 0;
+}
+.pageDisabled {
+  display: none;
+
+  // background-color: #e3e7e6;
+  // cursor: default;
+  // pointer-events: none;
+}
+
+.moveRight {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.unchecked {
+  path:first-child {
+    fill: #bdbdbd;
+  }
+}
+
+.pPoppins {
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.pInter {
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.allPromoDataTableStyle{
+  width: 100%;
+}
+
+.allPromoNameHeaderStyle{
+  width: 80px;
+  text-align: center !important;
+}
+
+.allPromoNameStyle{
+  font-weight: 700;
+  text-align: center;
+}
+
+.allPromoDiscountHeaderStyle{
+  width: 90px;
+  text-align: center !important;
+}
+
+.allPromoDiscountStyle{
+  text-align: center;
+}
+
+.allPromoUsedTimesStyle{
+  width: 110px;
+  text-align: center !important;
+}
+
+.allPromoTypeStyle{
+  width: 50px;
+  text-align: center !important;
+}
+
+.allPromoNotesStyle{
+  width: 150px;
+  text-align: center !important;
+}
+
+.allPromoEditStyle{
+  width: 50px;
+}
+
+.allPromoDeleteStyle{
+  width: 70px;
+}
+
+.allDeleteDialogStyle{
+  width: 40vw;
+}
+
+.allDeleteDialogSubTextStyle{
+  padding-bottom: 1rem;
+}
+
+.genPromoFormContainer{
+  padding: 0 8rem 0 2rem;
+}
+
+.genPromoSelectUserContainer{
+  padding-top: 36px;
+}
+
+.genPromoSelectImgContainer{
+  margin-bottom: 14px;
+}
+
+.genPromoSelectImgStyle{
+  width: 33px;
+  height: 33px;
+}
+
+.genPromoSelectChildImgStyle{
+  width: 33px;
+  height: 33px;
+  border-radius: 33px;
+}
+
+.genPromoSelectNameContainer{
+  padding: 0 16px;
+}
+
+.genPromoSelectNameText{
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.genPromoSelectRemoveIconStyle{
+  border-radius: 24px;
+  border-width: 2px;
+  border-color: red;
+}
+
+.genPromoSaveButtonStyle{
+  padding: 72px 0 16px 0;
+}
+
+.genPromoErrDialogContainer{
+  width: 50%;
+}
+
+.genPromoReviewDialogStyle{
+  width: 80%;
+}
+
+.genPromoReviewDialogContainer{
+  flex: 1;
+}
+
+.genPromoReviewDialogHeaderStyle{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.genPromoReviewTicketContainer{
+  position: relative;
+  padding: 16px 0;
+}
+
+.genPromoReviewTicketPercentStyle{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-15%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.genPromoReviewTicketNameStyle{
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(0%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.genPromoReviewValidContainer{
+  padding: 16px 0;
+}
+
+.genPromoReviewValidFromStyle{
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.genPromoReviewValidFromValueStyle{
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.genPromoReviewSeparateStyle{
+  display: inline-block;
+  border-left: 1px solid #4F4F4F;
+  margin: 0 10px;
+  height: auto;
+}
+
+.allAccountProfileHeaderStyle{
+  width: 58px;
+}
+
+.allAccountProfileImgStyle{
+  width: 48px;
+  height: 48px; 
+  border-radius: 24px;
+}
+
+.genPromoReviewApplyHeaderStyle{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.genPromoReviewApplySubHeaderStyle{
+  color: #828282;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  // letter-spacing: 0.02em,
+  text-transform: uppercase;
+}
+
+.genPromoReviewApplyUserStyle{
+ overflow: scroll;
+ height: 60%;
+}
+
+.genPromoSelectUserWrapper{
+  width: 85%;
+}
+
+.genPromoSelectUserTableStyle{
+ width: 100%;
+}
+
+.genPromoSelectUserNameHeaderStyle{
+  text-align: center !important;
+ }
+
+ .genPromoSelectUserNameColumnStyle{
+   font-weight: 700;
+   text-align: center;
+ }
+
+ .genPromoSelectUserProfileStyle{
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.getPromoSelectUserConfirmIconStyle{
+  text-align: center;
+}
+
+.genCalenderTextFieldStyle{
+  background-color: white !important;
+}
+
+.historyDataTableStyle{
+  width: 100%;
+}
+
+.historyNameHeaderStyle{
+  text-align: center !important;
+}
+
+.historyNameColumnStyle{
+  font-weight: 700;
+  text-align: center;
+}
+
+.historyContactHeaderStyle{
+  width: 200px;
+  text-align: center !important;
+}
+
+.historyDiscountHeaderStyle{
+  width: 60px;
+  text-align: center !important;
+}
+
+.historyDiscountColumnStyle{
+  font-weight: 700;
+  text-align: center;
+  width: 60px;
+}
+
+.deleteDataTableStyle{
+  width: 100%;
+}
+
+.deleteNameHeaderStyle{
+  text-align: center !important;
+} 
+
+.deleteNameColumnStyle{
+  font-weight: 700;
+  text-align: center;
+} 
